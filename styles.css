@@ -11,7 +11,7 @@ h1 {
  display: block;
 }
 h1:hover {
- color: hotpink;
+ color: black;
  text-align: center;
  width: 100%;
  display: block;
@@ -27,7 +27,7 @@ a {
  padding: 10px;
  border-radius: 20px;
  width: 20%;
- box-shadow: 8px 8px brown;
+ box-shadow: 8px 8px black;
  display: block; /* instead of flex */
 }
 .assign img {
@@ -38,5 +38,5 @@ a {
 .assign img:hover {
  width: 200px;
  margin: 10px;
- border: 2px dotted yellow;
+ border: 2px dotted red;
 }
