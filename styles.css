@@ -1,11 +1,11 @@
 body {
- background-color: #AFFF16;
+ background-color: #023047;
  font-family: Arial, Helvetica, sans-serif;
  display: flex;
  flex-wrap: wrap;
 }
 h1 {
- color: maroon;
+ color: black;
  text-align: center;
  width: 100%;
  display: block;
@@ -22,7 +22,7 @@ a {
 }
 
 .assign {
- background-color: grey;
+ background-color: #219ebc;
  margin: 10px;
  padding: 10px;
  border-radius: 20px;
