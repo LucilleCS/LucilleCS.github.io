@@ -1,0 +1,79 @@
+/*
+Color Scheme:
+rich black: #01161E
+navy: #124559
+purple: #8C86AA
+light green: #8FB996
+dark green: #709775
+*/
+
+
+/* main body */
+body {
+    color: #A1CCA5;
+    background-color: #01161E;
+    font-family:cursive;
+}
+
+#page {
+    background: #124559;
+    width: 95%;
+    margin:auto;
+    padding: 10px;
+}
+
+/*Headers*/
+
+h1 {
+    color: #709775;
+    background-color: #124559;
+    padding: 4px;
+    text-align: center;
+    margin: auto;
+   
+
+}
+
+h2{
+    color: #01161E;
+    margin-left: 10px;
+}
+
+h3{
+    color: #01161E;
+    margin-left: 10px;
+    text-align: center;
+}
+
+/* link */
+
+link {
+    color: #8FB996;
+}
+
+
+a {
+    text-decoration: none;
+    color: #8FB996;
+    padding: 10px; 
+    border-radius: 2px;  
+}
+
+a:hover {
+    color: #709775;
+}
+
+/* list */
+li {
+    margin-bottom: 10px; /* Adds spacing between list items */
+}
+
+/* paragraph */
+p {
+    margin-left: 10px;
+}
+
+table, th, td {
+    border:2px solid black;
+    border-collapse: collapse;
+}
