@@ -1,0 +1,121 @@
+/*structure and looks*/
+#main-header {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#content {
+  background-color: #f2d0a9;
+}
+
+.flex-container {
+  padding: 5px;
+  border-bottom: black;
+}
+
+#idea {
+  padding: 5px;
+  background-color: #99c1b9;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+/*how navigatin looks*/
+#navigation ul {
+  padding-left: 0;
+}
+
+#navigation li {
+  list-style-type: none;
+  padding: 5px;
+  background-color: #d88c9a;
+  border-bottom: 2px solid #c6586c;
+}
+
+#navigation a {
+  padding: 10px;
+  text-decoration: none;
+}
+
+/*Text and print*/
+#main-header h1 {
+  text-align: center;
+  color: #3e655d;
+}
+
+.text-container {
+  margin-bottom: 10px;
+}
+
+#order1,
+#order3 {
+  background-color: #3e655d;
+}
+
+#order2 {
+  background-color: #c6586c;
+}
+
+/*Idea 1 look*/
+
+/*resolutions*/
+@media (min-width: 900px) {
+  #navigation ul,
+  #order1 {
+    display: flex;
+  }
+
+  #navigation li {
+    flex: 1;
+  }
+
+  #flex-container-img {
+    display: block;
+    margin-left: auto;
+    right: 0;
+    padding-right: 10px;
+  }
+
+  .text-container {
+    flex-direction: column;
+  }
+  #order1 {
+    flex: 2;
+    background-color: #3e655d;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .title1,
+  .title2,
+  .title3,
+  .title4,
+  .title5,
+  .title6 {
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #order2 {
+    flex: 1;
+    background-color: #c6586c;
+  }
+
+  #order3 {
+    flex: 3;
+    background-color: #3e655d;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .second-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
