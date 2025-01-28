@@ -1,0 +1,91 @@
+/* somehow design for mobile first */
+/* Structure */
+body {
+    background:url(images/bg.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    background:white;
+    width:70%;
+    margin:auto; /* center */
+    padding:5px;
+    border: 1px solid darkblue;
+    border-radius:5px;
+    box-shadow: 10px 10px lightblue;
+}
+
+header, footer {
+    /*add padding for left and right on short screen*/
+    background:darkblue;
+    color:white;
+}
+
+/* Navigation */
+#main-nav ul {
+    padding-left:0;
+}
+
+#main-nav li {
+    list-style-type: none;  /* remove the bullets */
+    /*display:inline-block; got rid for mobile friendly*/ 
+    background:#FACDC4;
+    border-bottom-color:1px solid aqua;
+}
+
+#main-nav a {
+    color:white;
+    text-decoration: none;  /* remove the underlines */
+    border-bottom:1px solid transparent;
+}
+
+#main-nav a:hover {
+    color:crimson;
+    border-bottom:1px solid white;
+}
+
+/* Typography */
+header h1 {
+    text-align: center;
+}
+
+footer p {
+    text-align:center;
+}
+
+.idea {
+    padding:5px;
+}
+
+.idea:nth-child( even ) {
+    background:#CDECEF;
+}
+
+.idea-img {
+    margin-top:20px;
+    padding:5px;
+    text-align: center;
+}
+
+/*
+for larger screens aka when the screen goes large
+*/
+@media only screen and (min-width: 768px) { 
+    .columns {
+        
+        /*
+        flex all block level elements
+        */
+        display: flex;
+    }
+
+    #main-nav li {
+        /* everything on list*/
+        flex:1;
+    }
+/*everything but the last child in the list aka the contact*/
+    #main-nav li:not(:last-child) {
+        border-right:1px solid white;
+    }
+
+}
