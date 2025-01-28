@@ -1,0 +1,71 @@
+/*  
+Colors:
+black is black: #000000
+surronding borders and important text: #73000A
+they use white for their background(which is default anyway): #FFFFFF 
+hover: #C32B3D
+
+
+*/
+
+/*
+entire page setup 
+*/
+.entirePage {
+  background: #bbb09b;
+  width: 95%;
+  margin: auto;
+  padding: 0px;
+}
+/*Navigation*/
+
+nav {
+  /*
+where the entire nav section is
+  */
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 100px;
+}
+
+/*how navigatin looks*/
+.navigation ul {
+  /*
+  where the list is located
+  */
+  text-decoration: none;
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0;
+  padding: 0px;
+  top: 0;
+}
+
+.navigation li {
+  /*
+  list items
+  */
+  list-style-type: none;
+  font-size: x-small;
+  margin-left: 10px;
+  margin-left: 10px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+}
+
+.navigation a:hover {
+  background-color: #c32b3d;
+}
+
+.navigation img {
+  margin-left: 25px;
+  padding: 0px;
+}
