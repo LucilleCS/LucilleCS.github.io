@@ -5,6 +5,7 @@
     <title>Project part 3: mockkit recreate</title>
     <link rel="stylesheet" href="../part3/styles/styles.css" />
     <link rel="stylesheet" href="../part3/styles/reservation.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <div id="page">
@@ -29,9 +30,20 @@
       </header>
       <main>
         <section id="reservation">
-          <h4>Name:</h4>
-          <h4>Email:</h4>
-          <h4>Time Slot:</h4>
+          <section class="input">
+            <h4>Name:</h4>
+            <input type="text" id="name" />
+          </section>
+          <section class="input">
+            <h4>Email:</h4>
+            <input type="text" id="name" />
+          </section>
+          <section class="input">
+            <h4>Time Slot:</h4>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+            </div>
+          </section>
         </section>
 
         <h2>Popular Foods:</h2>

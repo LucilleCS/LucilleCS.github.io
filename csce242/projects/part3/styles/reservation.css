@@ -14,7 +14,12 @@ h4 {
 
 .recomendation .row {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+.dropbtn {
+  margin-bottom: 10px;
 }
 
 @media (min-width: 1000px) {
@@ -33,5 +38,22 @@ h4 {
   .recomendation img {
     width: 150px;
     height: 150px;
+  }
+
+  .input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  input {
+    height: 20px;
+    margin-left: 10px;
+  }
+
+  .dropbtn {
+    margin-left: 10px;
   }
 }
