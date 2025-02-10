@@ -1,0 +1,23 @@
+img {
+  width: 100px;
+  height: 100px;
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1000px) {
+  .menuItem {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+  }
+
+  .paragraph {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
