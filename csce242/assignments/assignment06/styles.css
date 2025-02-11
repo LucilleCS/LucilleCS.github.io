@@ -1,0 +1,108 @@
+/* Root Variables */
+:root {
+  --backgroundC: #f1f2e9;
+  --h1C: #115f66;
+  --textC: #d98282;
+  --black: #000000;
+  --white: #ffffff;
+  --boxC: #f2f0d5;
+}
+
+/* General Body Styling */
+body {
+  background-color: var(--backgroundC);
+  text-align: center;
+  justify-content: center;
+}
+
+/* Heading and Text Styling */
+h1 {
+  color: var(--textC);
+}
+
+h2,
+p,
+a,
+h4,
+#colorMH {
+  color: var(--h1C);
+}
+
+/* Navigation Styling */
+nav #links {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#navigation {
+  background-color: #d98282;
+  display: flex;
+  flex-direction: row;
+}
+
+a:first-of-type::after {
+  content: "|";
+}
+
+/* Travel Header */
+#travelhead {
+  color: var(--white);
+}
+
+/* Travel Sections */
+#traveling,
+#pictureChooser {
+  justify-content: center;
+  width: 80%;
+  margin: 20px auto 0;
+  padding: 5px;
+}
+
+#traveling {
+  background-color: var(--black);
+}
+
+#pictureChooser {
+  background-color: var(--boxC);
+}
+
+/* Image Styling */
+#transportationImg {
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Heart Icon */
+#heart {
+  font-size: 70px;
+  color: white;
+}
+
+/* Footer Styling */
+footer {
+  margin-top: 10px;
+}
+
+/* Media Queries */
+@media (min-width: 1000px) {
+  #traveling,
+  #pictureChooser {
+    width: 30%;
+  }
+
+  /* Navigation for Larger Screens */
+  #navigation {
+    background-color: #d98282;
+    display: flex;
+    flex-direction: row;
+  }
+
+  a:first-of-type::after {
+    content: "|";
+  }
+}

@@ -1,0 +1,32 @@
+.catItem:nth-child(even) {
+  margin-left: auto;
+}
+
+#aboutCat {
+  display: flex;
+  flex-direction: column;
+}
+
+.catItem {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  padding: 10px;
+  background-color: antiquewhite;
+  margin-bottom: 20px;
+}
+
+.catImg {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100%;
+}
+
+@media (min-width: 1000px) {
+  .catImg {
+    padding: 5px;
+    width: auto;
+  }
+}

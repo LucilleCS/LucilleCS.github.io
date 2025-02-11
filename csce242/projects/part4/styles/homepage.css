@@ -1,0 +1,43 @@
+#body {
+  display: flex;
+  flex-direction: column;
+}
+
+#catOfWeek {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #c69c6c;
+  padding: 10px;
+}
+
+#catOfWeek img {
+  width: 100%;
+  width: 350px;
+  height: 200px;
+}
+
+#left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1000px) {
+  #body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  h3 {
+    color: white;
+  }
+
+  #catOfWeek {
+    margin-left: 20%;
+    margin-right: 10%;
+  }
+}
