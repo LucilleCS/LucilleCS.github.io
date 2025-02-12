@@ -1,0 +1,14 @@
+.hide-small,
+#unclick {
+  display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  .hide-small {
+    display: flex;
+  }
+  #click,
+  #unclick {
+    display: none;
+  }
+}

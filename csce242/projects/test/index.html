@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paw Print Effect</title>
+    <style>
+      .paw-print {
+        position: absolute;
+        pointer-events: none; /* Prevent paw print from interfering with other clicks */
+        width: 50px; /* Set the size of the paw print */
+        height: 50px;
+        transition: opacity 0.5s ease-out; /* Make the paw print fade out */
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      window.onload = () => {
+        document.body.addEventListener("click", (event) => {
+          // Create a new image element for the paw print
+          let pawPrint = document.createElement("img");
+          pawPrint.src = "pawPrint.png"; // Replace with your paw print image URL
+          pawPrint.classList.add("paw-print");
+
+          // Position the paw print at the cursor's coordinates
+          pawPrint.style.left = `${event.pageX - 25}px`; // Adjust to center the image over the cursor
+          pawPrint.style.top = `${event.pageY - 25}px`;
+
+          // Append the paw print to the body
+          document.body.appendChild(pawPrint);
+
+          // Optional: Fade out and remove the paw print after a short time (e.g., 2 seconds)
+          setTimeout(() => {
+            pawPrint.style.opacity = "0"; // Start fading out the paw print
+          }, 0);
+
+          // Remove the paw print from the DOM after it fades out
+          setTimeout(() => {
+            pawPrint.remove();
+          }, 2000); // Removes the image after 2 seconds
+        });
+      };
+    </script>
+  </body>
+</html>
