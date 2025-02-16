@@ -2,122 +2,180 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Project part 3: mockkit recreate</title>
-    <link rel="stylesheet" href="../part3/styles/styles.css" />
-    <link rel="stylesheet" href="../part3/styles/menu.css" />
+    <title>Project part 4: update</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/menu.css" />
     <script src="script.js"></script>
   </head>
   <body>
     <div id="page">
       <header>
         <div class="row">
-          <img id="logo" src="https://placehold.co/200x50" />
+          <img id="logo" src="images/logo.png" />
           <img id="login" src="https://placehold.co/100x20" />
         </div>
-        <nav>
-          <div class="row">
-            <ul id="'nagivation">
-              <li><a href="homepage.html"> Home </a></li>
-              <li>
-                <a href="reservation.html"> Reservation </a>
-              </li>
-              <li><a href="shop.html"> Shop </a></li>
-              <li><a href="menu.html"> Menu </a></li>
-              <li><a href="cats.html"> Cats </a></li>
-            </ul>
+        <nav id="main-nav">
+          <div id="toggle-nav">
+            <div id="click">&#9660;</div>
+            <div id="unclick">&#9650;</div>
+          </div>
+          <div id="nav-items" class="columns hide-small">
+            <div class="row">
+              <ul id="nagivation">
+                <li><a href="homepage.html"> Home </a></li>
+                <li>
+                  <a href="reservation.html"> Reservation </a>
+                </li>
+                <li><a href="shop.html"> Shop </a></li>
+                <li><a href="menu.html"> Menu </a></li>
+                <li><a href="cats.html"> Cats </a></li>
+              </ul>
+            </div>
           </div>
         </nav>
       </header>
       <main>
         <h1>MENU</h1>
+        <p id="menuAbout">explore our menu and pick what you perfer!</p>
         <div id="menu">
+          <h1>Hot Drinks</h1>
           <section class="menuItem">
-            <img src="https://placehold.co/100x100" />
+            <img src="images/foods/coffee.jpg" />
             <section class="paragraph">
+              <h4>Coffee</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                arcu lectus, volutpat in mattis a, consectetur at nibh.
-                <br />
-                Maecenas et consectetur eros. Integer malesuada et lectus eget
-                laoreet. <br />
-                Aenean blandit, massa in volutpat fermentum, ligula velit
-                laoreet orci, sit amet cursus dolor augue vel neque. Curabitur
-                suscipit sed eros at mattis. <br />
+                Enjoy a nice cup of coffee, avalible in 3 different roasts. The
+                original default medium roast, our light roast, or our bold and
+                dark roast.
               </p>
             </section>
-            <img src="https://placehold.co/100x100" />
+            <p class="price">...2.99</p>
           </section>
 
           <section class="menuItem">
-            <img src="https://placehold.co/100x100" />
+            <img src="images/foods/hotChocolate.jpg" />
             <section class="paragraph">
+              <h4>Hot Chocolate</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                arcu lectus, volutpat in mattis a, consectetur at nibh.
+                Hot chocolate with milk at its base! Subsituted with water if
+                needed.
                 <br />
-                Maecenas et consectetur eros. Integer malesuada et lectus eget
-                laoreet. <br />
-                Aenean blandit, massa in volutpat fermentum, ligula velit
-                laoreet orci, sit amet cursus dolor augue vel neque. Curabitur
-                suscipit sed eros at mattis. <br />
               </p>
             </section>
-            <img src="https://placehold.co/100x100" />
+            <p class="price">...4.99</p>
           </section>
 
           <section class="menuItem">
-            <img src="https://placehold.co/100x100" />
+            <img src="images/foods/tea.jpg" />
             <section class="paragraph">
+              <h4>Tea</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                arcu lectus, volutpat in mattis a, consectetur at nibh.
+                Sip on some relaxing house special tea with our signature secret
+                ingredients. <br />
+                It has notes of relaxing herbs and has semi-sweet floral taste.
                 <br />
-                Maecenas et consectetur eros. Integer malesuada et lectus eget
-                laoreet. <br />
-                Aenean blandit, massa in volutpat fermentum, ligula velit
-                laoreet orci, sit amet cursus dolor augue vel neque. Curabitur
-                suscipit sed eros at mattis. <br />
               </p>
             </section>
-            <img src="https://placehold.co/100x100" />
+            <p class="price">...2.99</p>
+          </section>
+          <hr />
+          <h1>Cold Drinks</h1>
+
+          <section class="menuItem">
+            <img src="images/foods/sweetTea.jpg" />
+            <section class="paragraph">
+              <h4>Iced Sweet Tea</h4>
+              <p>
+                Try a super sweet southern style version of iced Sweet tea.
+                <br />
+              </p>
+            </section>
+            <p class="price">...3.99</p>
           </section>
 
           <section class="menuItem">
-            <img src="https://placehold.co/100x100" />
+            <img src="images/foods/lemonade.jpg" />
             <section class="paragraph">
+              <h4>lemonade</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                arcu lectus, volutpat in mattis a, consectetur at nibh.
+                Try a refreshing fresh lemonade. Made with real lemons, we juice
+                them <br />
+                each morning for customers to enjoy.
                 <br />
-                Maecenas et consectetur eros. Integer malesuada et lectus eget
-                laoreet. <br />
-                Aenean blandit, massa in volutpat fermentum, ligula velit
-                laoreet orci, sit amet cursus dolor augue vel neque. Curabitur
-                suscipit sed eros at mattis. <br />
               </p>
             </section>
-            <img src="https://placehold.co/100x100" />
+            <p class="price">...3.99</p>
+          </section>
+          <hr />
+          <h1>Foods and Pastries</h1>
+          <section class="menuItem">
+            <img src="images/foods/crossiant.jpg" />
+            <section class="paragraph">
+              <h4>Crossiant</h4>
+              <p>
+                Freshly baked crossiants, with a egg wash and crisp but soft
+                layers.
+                <br />
+              </p>
+            </section>
+            <p class="price">...4.99</p>
           </section>
 
           <section class="menuItem">
-            <img src="https://placehold.co/100x100" />
+            <img src="images/foods/salad.png" />
             <section class="paragraph">
+              <h4>Salad</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                arcu lectus, volutpat in mattis a, consectetur at nibh.
+                Try our fresh mix of veggies and cheese!
                 <br />
-                Maecenas et consectetur eros. Integer malesuada et lectus eget
-                laoreet. <br />
-                Aenean blandit, massa in volutpat fermentum, ligula velit
-                laoreet orci, sit amet cursus dolor augue vel neque. Curabitur
-                suscipit sed eros at mattis. <br />
               </p>
             </section>
-            <img src="https://placehold.co/100x100" />
+            <p class="price">...10.99</p>
+          </section>
+          <section class="menuItem">
+            <img src="images/foods/sandwich.png" />
+            <section class="paragraph">
+              <h4>Sandwich</h4>
+              <p>
+                Our sandwich comes with kale,ham,onion,egg,and cheese!
+                <br />
+              </p>
+            </section>
+            <p class="price">...8.99</p>
+          </section>
+
+          <section class="menuItem">
+            <img src="images/foods/stawberryTart.jpg" />
+            <section class="paragraph">
+              <h4>Strawberry Tart</h4>
+              <p>
+                Delicious strawberry tarts, with preserverd jam jelly in the
+                middle. <br />
+                Its baked with shortbread cookies and goes great with coffee.
+                <br />
+                (this is personally the owners favorite)
+              </p>
+            </section>
+            <p class="price">... 0.99</p>
+          </section>
+
+          <section class="menuItem">
+            <img src="images/foods/snackTray.jpg" />
+            <section class="paragraph">
+              <h4>Snack Tray</h4>
+              <p>
+                Sample on a snack tray which includes, grapes, bluebrries,
+                <br />
+                and assortments of crackers, cheese, and meats!
+                <br />
+              </p>
+            </section>
+            <p class="price">...12.99</p>
           </section>
         </div>
       </main>
       <footer>&copy; Lucille Oshea</footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -2,29 +2,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Project part 3: mockkit recreate</title>
-    <link rel="stylesheet" href="../part3/styles/styles.css" />
-    <link rel="stylesheet" href="../part3/styles/shop.css" />
+    <title>Project part 4: update</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/shop.css" />
     <script src="script.js"></script>
   </head>
   <body>
     <div id="page">
       <header>
         <div class="row">
-          <img id="logo" src="https://placehold.co/200x50" />
           <img id="login" src="https://placehold.co/100x20" />
         </div>
-        <nav>
-          <div class="row">
-            <ul id="'nagivation">
-              <li><a href="homepage.html"> Home </a></li>
-              <li>
-                <a href="reservation.html"> Reservation </a>
-              </li>
-              <li><a href="shop.html"> Shop </a></li>
-              <li><a href="menu.html"> Menu </a></li>
-              <li><a href="cats.html"> Cats </a></li>
-            </ul>
+        <nav id="main-nav">
+          <div id="toggle-nav">
+            <div id="click">&#9660;</div>
+            <div id="unclick">&#9650;</div>
+          </div>
+          <div id="nav-items" class="columns hide-small">
+            <div class="row">
+              <ul id="nagivation">
+                <li><a href="homepage.html"> Home </a></li>
+                <li>
+                  <a href="reservation.html"> Reservation </a>
+                </li>
+                <li><a href="shop.html"> Shop </a></li>
+                <li><a href="menu.html"> Menu </a></li>
+                <li><a href="cats.html"> Cats </a></li>
+              </ul>
+            </div>
           </div>
         </nav>
       </header>
@@ -32,79 +37,41 @@
         <h1>Shop</h1>
         <div id="shopPage">
           <section class="shopItem">
-            <img src="https://placehold.co/100x100" />
+            <h2>Light Roast</h2>
+            <img src="images/shopItems/lightRoast.jpg" />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              arcu lectus, volutpat in mattis a, consectetur at nibh.
-              <br />
-              Maecenas et consectetur eros. Integer malesuada et lectus eget
-              laoreet. <br />
-              Aenean blandit, massa in volutpat fermentum, ligula velit laoreet
-              orci, sit amet cursus dolor augue vel neque. Curabitur suscipit
-              sed eros at mattis. <br />
-              Quisque accumsan egestas arcu, eu malesuada tellus. Sed suscipit
-              ligula sit amet sapien molestie luctus in vitae turpis. <br />
-              Phasellus at accumsan orci, condimentum commodo felis. Vivamus
-              egestas non dui a viverra.<br />
+              Enjoy our light roast! Our light roast are bright, acidic and
+              fruity. They preserve all the natural flavor of our coffee beans.
             </p>
           </section>
 
           <section class="shopItem">
-            <img src="https://placehold.co/100x100" />
+            <h2>Medium Roast</h2>
+            <img src="images/shopItems/mediumRoast.jpg" />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              arcu lectus, volutpat in mattis a, consectetur at nibh.
-              <br />
-              Maecenas et consectetur eros. Integer malesuada et lectus eget
-              laoreet. <br />
-              Aenean blandit, massa in volutpat fermentum, ligula velit laoreet
-              orci, sit amet cursus dolor augue vel neque. Curabitur suscipit
-              sed eros at mattis. <br />
-              Quisque accumsan egestas arcu, eu malesuada tellus. Sed suscipit
-              ligula sit amet sapien molestie luctus in vitae turpis. <br />
-              Phasellus at accumsan orci, condimentum commodo felis. Vivamus
-              egestas non dui a viverra.<br />
+              Enjoy a balanced flavored roast. Our medium Roast has notes of
+              caramel, chocolate and nuts with mild acidity.
             </p>
           </section>
 
           <section class="shopItem">
-            <img src="https://placehold.co/100x100" />
+            <h2>Dark Roast</h2>
+            <img src="images/shopItems/darkRoast.jpg" />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              arcu lectus, volutpat in mattis a, consectetur at nibh.
-              <br />
-              Maecenas et consectetur eros. Integer malesuada et lectus eget
-              laoreet. <br />
-              Aenean blandit, massa in volutpat fermentum, ligula velit laoreet
-              orci, sit amet cursus dolor augue vel neque. Curabitur suscipit
-              sed eros at mattis. <br />
-              Quisque accumsan egestas arcu, eu malesuada tellus. Sed suscipit
-              ligula sit amet sapien molestie luctus in vitae turpis. <br />
-              Phasellus at accumsan orci, condimentum commodo felis. Vivamus
-              egestas non dui a viverra.<br />
+              Enjoy our dark roat, with a rich, bold, and chocolate taste. It
+              has low acidicy and brings out bitter flavors when roasted.
             </p>
           </section>
 
           <section class="shopItem">
-            <img src="https://placehold.co/100x100" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              arcu lectus, volutpat in mattis a, consectetur at nibh.
-              <br />
-              Maecenas et consectetur eros. Integer malesuada et lectus eget
-              laoreet. <br />
-              Aenean blandit, massa in volutpat fermentum, ligula velit laoreet
-              orci, sit amet cursus dolor augue vel neque. Curabitur suscipit
-              sed eros at mattis. <br />
-              Quisque accumsan egestas arcu, eu malesuada tellus. Sed suscipit
-              ligula sit amet sapien molestie luctus in vitae turpis. <br />
-              Phasellus at accumsan orci, condimentum commodo felis. Vivamus
-              egestas non dui a viverra.<br />
-            </p>
+            <h2>Coffee Mug</h2>
+            <img src="images/shopItems/coffeeMug.png" />
+            <p>Enjoy your coffee in a simple yet useful mug.</p>
           </section>
         </div>
       </main>
       <footer>&copy; Lucille Oshea</footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
