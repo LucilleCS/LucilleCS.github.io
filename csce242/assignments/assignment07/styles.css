@@ -44,17 +44,22 @@ h1, h2 , main, footer{
 #left, #right {
   display:none;
   width:60px;
+  position:relative;
+  top:-100px;
 }
 
 #stair {
   width:80px;
   border-left:5px solid black;
   border-right:5px solid black;
+  display:none;
 }
+
 hr{
   border: none;           
   height: 5px;            
   background-color: black; 
+  margin-bottom: 40px;
 }
 
 @media (min-width: 1000px) {
