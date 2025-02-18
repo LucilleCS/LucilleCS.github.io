@@ -1,14 +1,62 @@
-.hide-small,
-#unclick {
-  display: none;
+/* Root Variables */
+:root {
+  --backgroundC: #f1f2e9;
+  --h1C: #115f66;
+  --textC: #d98282;
+  --black: #000000;
+  --white: #ffffff;
+  --boxC: #f2f0d5;
 }
 
-@media only screen and (min-width: 1200px) {
-  .hide-small {
-    display: flex;
-  }
-  #click,
-  #unclick {
-    display: none;
-  }
+html {
+  background-color: var(--backgroundC);
+}
+
+h1{
+  color: var(--h1C);
+}
+
+h2{
+  color:var(--textC);
+}
+
+h1, h2 , main, footer{
+  text-align: center;
+}
+
+#drawStairs, #climbStairs {
+  width:100px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#climbStairs{
+  display: none;
+
+}
+
+#column {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#left, #right {
+  display:none;
+  width:60px;
+}
+
+#stair {
+  width:80px;
+  border-left:5px solid black;
+  border-right:5px solid black;
+}
+hr{
+  border: none;           
+  height: 5px;            
+  background-color: black; 
+}
+
+@media (min-width: 1000px) {
+
 }

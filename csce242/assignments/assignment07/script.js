@@ -1,14 +1,38 @@
-document.getElementById("toggle-nav").onclick = () => {
-  let clickElement = document.getElementById("click");
-  let unclickElement = document.getElementById("unclick");
-  document.getElementById("nav-items").classList.toggle("hide-small");
-  clicks++;
+let clicks = 0;
+document.getElementById("drawStairs").onclick = () => {
+  const showButton = document.getElementById("climbStairs");
+  const showStick = document.getElementById("left");
+  const stair = document.getElementById("stair");
+  const stairImg = document.getElementById("stairImg");
 
-  if (clicks % 2 === 1) {
-    clickElement.style.display = "none";
-    unclickElement.style.display = "block";
-  } else {
-    clickElement.style.display = "block";
-    unclickElement.style.display = "none";
+  showButton.style.display = "block";
+  showStick.style.display = "block";
+
+  drawStairs();
+
+  for(let i=0; i<10;i++) {
+    innerHTML +=
   }
-};
+
+}
+
+function drawStairs () {
+
+}
+document.getElementById("climbStairs").onclick = () => {
+  const left = document.getElementById("left");
+  const right = document.getElementById("right");
+  if(clicks % 2 === 0) {
+    left.style.display="none"
+    right.style.display="block"
+  }
+  else{
+    right.style.display="none"
+    left.style.display="block"
+  }
+  clicks++;
+}
+
+
+
+
