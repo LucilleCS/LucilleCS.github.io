@@ -1,0 +1,155 @@
+<!--Lucille O'Shea, CSCE242 section 001-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project part 4: update</title>
+    <link rel="stylesheet" href="../styles/reservation.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <div id="page">
+      <header>
+        <div class="row">
+          <img id="logo" src="../images/ofCafe/logo.png" />
+        </div>
+        <nav id="main-nav">
+          <div id="toggle-nav">
+            <div id="click">&#9660;</div>
+            <div id="unclick">&#9650;</div>
+          </div>
+          <div id="nav-items" class="columns hide-small">
+            <div class="row">
+              <ul id="nagivation">
+                <li><a href="homepage.html"> Home </a></li>
+                <li>
+                  <a href="reservation.html"> Reservation </a>
+                </li>
+                <li><a href="shop.html"> Shop </a></li>
+                <li><a href="menu.html"> Menu </a></li>
+                <li><a href="cats.html"> Cats </a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <h1>Reservations</h1>
+        <div id="makeReservation">
+          <section id="reservation">
+            <h2>Book A Seat!</h2>
+            <section class="input">
+              <h4>Name:</h4>
+              <input type="text" id="name" />
+            </section>
+            <section class="input">
+              <h4>Email:</h4>
+              <input type="text" id="name" />
+            </section>
+            <section class="input">
+              <h4>Time Slot:</h4>
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+              </div>
+            </section>
+          </section>
+        </div>
+        <div id="Events">
+          <h1>Events</h1>
+          <hr id="short" />
+          <section class="event">
+            <h2>Purrintines</h2>
+            <p>Date: February 14th</p>
+            <p>Time: All day</p>
+            <p>Description</p>
+            <p>
+              Lonely on valentines day? Not anymore! Stop by the cafe for a
+              small date with our cats and enjoy a free strawberry tart!
+            </p>
+          </section>
+
+          <section class="event">
+            <h2>Book club</h2>
+            <p>Date: February 28th</p>
+            <p>Time: 5pm-7pm</p>
+            <p>Description</p>
+            <p>
+              Come join the cat cafe's local book club. Talk about the book "The
+              Cat I never Named".
+            </p>
+          </section>
+
+          <section class="event">
+            <h2>Support the paws!</h2>
+            <p>Date: March 12th</p>
+            <p>Time: All day</p>
+            <p>Description</p>
+            <p>
+              Today we're brining a few new cats in the cafe! Join us as we
+              teach about cat advocacy, and introduce our new castaff. Extra
+              donations are welcome and will go to shelters and for the current
+              cats wellbeing.
+            </p>
+          </section>
+        </div>
+
+        <div id="popularFoods">
+          <h2>Popular Foods:</h2>
+
+          <section id="foodRecomendations">
+            <div id="foodRecs">
+              <a href="individualFood.html">
+                <section class="recomendation">
+                  <img src="../images/foods/coffee.jpg" />
+                  <h4>Coffee</h4>
+                </section></a
+              >
+              <section class="recomendation">
+                <img src="../images/foods/stawberryTart.jpg" />
+                <h4>Strawberry Tart</h4>
+              </section>
+              <section class="recomendation">
+                <img src="../images/foods/snackTray.jpg" />
+                <h4>Snack Tray</h4>
+              </section>
+              <section class="recomendation">
+                <img src="../images/foods/sandwich.png" />
+                <h4>Sandwich</h4>
+              </section>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <section>
+        <h1>About the owner</h1>
+      </section>
+      <div id="footer">
+        <section id="aboutOwner">
+          <img src="../images/ofCafe/owner.png" id="ownerImg" />
+          <p>
+            I'm Maria Sue, and I'm the proud owner of pauws for beans. Get it,
+            pause/paws for beans (coffee beans). I wanted to create a safe and
+            cozy space for people and cats to get along. <br />
+            After having my own childhood cat, sprinkles, I wished people could
+            enjoy a cats company more than anything. I hope you stop by and
+            enjoy this cafe as much as I think sprinkles would have!
+          </p>
+        </section>
+        <section id="information">
+          <section id="icons">
+            <img src="../images/icons/facebook.png" class="icon" />
+            <img src="../images/icons/instagram.png" class="icon" />
+            <img src="../images/icons/twitter.png" class="icon" />
+          </section>
+          <hr />
+          <p>Mail:</p>
+          <a href="mailto:example@example.com">MariaSue001@gmail.com</a>
+        </section>
+      </div>
+      &copy; Lucille Oshea
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
