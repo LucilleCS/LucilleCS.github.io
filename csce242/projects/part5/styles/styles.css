@@ -7,6 +7,7 @@
   --darkGreen: #012622;
   --cyan: #51a3a3;
   --darkBrown: #210203;
+  --green: #394f49;
 }
 
 body {
@@ -20,6 +21,14 @@ body {
   padding: 20px;
 }
 
+header {
+  background-color: #394f49;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
 .row {
   display: flex;
   flex-direction: row;
@@ -28,10 +37,6 @@ body {
 .column {
   display: flex;
   flex-direction: column;
-}
-
-img {
-  width: 100%;
 }
 
 #logo {

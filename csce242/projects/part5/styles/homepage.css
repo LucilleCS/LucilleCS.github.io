@@ -7,6 +7,11 @@
   --darkGreen: #012622;
   --cyan: #51a3a3;
   --darkBrown: #210203;
+  --green: #394f49;
+}
+
+p {
+  color: #012622;
 }
 
 h1 {
@@ -46,6 +51,9 @@ h1 {
   padding: 30px;
 }
 
+#whatIs p {
+  color: var(--pink);
+}
 #aboutUs {
   border-right: 5px solid black;
   border-bottom: 5px solid black;
@@ -65,6 +73,18 @@ h1 {
   color: var(--pink);
   border-radius: 20px;
   margin-bottom: 100px;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  background-color: #394f49;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
 }
 @media (min-width: 1000px) {
   #topHome {

@@ -3,37 +3,74 @@
 <html>
   <head>
     <title>Project part 4: update</title>
-    <link rel="stylesheet" href="../styles/homepage.css" />
     <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/shop.css" />
   </head>
   <body>
-    <div id="page">
-      <header>
-        <div class="row">
-          <img id="logo" src="../images/ofCafe/logo.png" />
+    <header>
+      <div class="row">
+        <img id="logo" src="../images/ofCafe/logo.png" />
+      </div>
+      <nav id="main-nav">
+        <div id="toggle-nav">
+          <div id="click">&#9660;</div>
+          <div id="unclick">&#9650;</div>
         </div>
-        <nav id="main-nav">
-          <div id="toggle-nav">
-            <div id="click">&#9660;</div>
-            <div id="unclick">&#9650;</div>
+        <div id="nav-items" class="columns hide-small">
+          <div class="row">
+            <ul id="nagivation">
+              <li><a href="homepage.html"> Home </a></li>
+              <li>
+                <a href="reservation.html"> Reservation </a>
+              </li>
+              <li><a href="shop.html"> Shop </a></li>
+              <li><a href="menu.html"> Menu </a></li>
+              <li><a href="cats.html"> Cats </a></li>
+            </ul>
           </div>
-          <div id="nav-items" class="columns hide-small">
-            <div class="row">
-              <ul id="nagivation">
-                <li><a href="homepage.html"> Home </a></li>
-                <li>
-                  <a href="reservation.html"> Reservation </a>
-                </li>
-                <li><a href="shop.html"> Shop </a></li>
-                <li><a href="menu.html"> Menu </a></li>
-                <li><a href="cats.html"> Cats </a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+    </header>
+    <div id="page">
       <main>
-        
+        <h1>Shop</h1>
+        <div id="shopPage">
+          <a href="individualShop.html">
+            <section class="shopItem">
+              <h2>Light Roast</h2>
+              <img src="../images/shopItems/lightRoast.jpg" />
+              <p>
+                Enjoy our light roast! Our light roast are bright, acidic and
+                fruity. They preserve all the natural flavor of our coffee
+                beans.
+              </p>
+            </section></a
+          >
+
+          <section class="shopItem">
+            <h2>Medium Roast</h2>
+            <img src="../images/shopItems/mediumRoast.jpg" />
+            <p>
+              Enjoy a balanced flavored roast. Our medium Roast has notes of
+              caramel, chocolate and nuts with mild acidity.
+            </p>
+          </section>
+
+          <section class="shopItem">
+            <h2>Dark Roast</h2>
+            <img src="../images/shopItems/darkRoast.jpg" />
+            <p>
+              Enjoy our dark roat, with a rich, bold, and chocolate taste. It
+              has low acidicy and brings out bitter flavors when roasted.
+            </p>
+          </section>
+
+          <section class="shopItem">
+            <h2>Coffee Mug</h2>
+            <img src="../images/shopItems/coffeeMug.png" />
+            <p>Enjoy your coffee in a simple yet useful mug.</p>
+          </section>
+        </div>
       </main>
     </div>
     <footer>
