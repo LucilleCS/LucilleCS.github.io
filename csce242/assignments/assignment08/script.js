@@ -1,26 +1,37 @@
-const tite = [
-    "Happy Birthday",
-    "Crazy Clown",
-    "It's Raining",
-    "Quiet Time",
-    "Working Hard",
-    "Work From Home"
-];
-const image = [
-    "images/birthday.jpg",
-    "images/clown.jpg",
-    "images/rain.jpg",
-    "images/read.jpg",
-    "images/shovel.jpg",
-    "images/work.jpg"
-];
-
 window.onload = () => {
+    const events = [];
+    events["Happy Birthday"] = "images/birthday.jpg";
+    events["Crazy Clown"] = "images/clown.jpg";
+    events["It's Raining"] = "images/rain.jpg";
+    events["Quiet Time"] = "images/read.jpg";
+    events["Working Hard"] = "images/shovel.jpg";
+    events["Work From Home"] = "images/work.jpg";
+
     const column = document.getElementById("column");
-    
-    for (let i = 0; i < tite.length; i++) {
-        const div = document.createElement("div");
-        div.innerHTML += `<h3>${tite[i]}</h3>`;
-        column.appendChild(div);
+    const section = document.getElementById("displayEvent");
+    const popupModal = document.getElementById("popupModal");
+    const popupImage = document.getElementById("popupImage");
+    const closePopup = document.getElementById("closePopup");
+
+    for (let eventName in events) {
+        const p = document.createElement("p");
+        section.append(p);
+        p.innerHTML = eventName;
+
+        p.onclick = () => {
+            popupModal.style.display = "flex";
+            popupImage.src = events[eventName]; 
+            popupImage.alt = eventName;
+        };
     }
+
+    closePopup.onclick = () => {
+        popupModal.style.display = "none";
+    };
+
+    window.onclick = (event) => {
+        if (event.target === popupModal) {
+            popupModal.style.display = "none"; 
+        }
+    };
 };
