@@ -79,13 +79,7 @@ img {
   width: 100%;
 }
 
-header {
-  background-color: #394f49;
-  width: 90%;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 5px;
-}
+
 @media (min-width: 1000px) {
   #topHome {
     flex-direction: row;
