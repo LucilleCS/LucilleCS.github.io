@@ -1,7 +1,8 @@
-<!--Lucille O'Shea, CSCE242 section 001-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project part 4: update</title>
     <link rel="stylesheet" href="../styles/cats.css" />
     <link rel="stylesheet" href="../styles/styles.css" />
@@ -9,7 +10,7 @@
   <body>
     <header>
       <div class="row">
-        <img id="logo" src="../images/ofCafe/logo.png" />
+        <img id="logo" src="../images/ofCafe/logo.png" alt="Cafe Logo" />
       </div>
       <nav id="main-nav">
         <div id="toggle-nav">
@@ -20,9 +21,7 @@
           <div class="row">
             <ul id="nagivation">
               <li><a href="homepage.html"> Home </a></li>
-              <li>
-                <a href="reservation.html"> Reservation </a>
-              </li>
+              <li><a href="reservation.html"> Reservation </a></li>
               <li><a href="shop.html"> Shop </a></li>
               <li><a href="menu.html"> Menu </a></li>
               <li><a href="cats.html"> Cats </a></li>
@@ -31,135 +30,48 @@
         </div>
       </nav>
     </header>
+
     <div id="page">
       <main>
         <h1>About Our Cats</h1>
-        <div id="aboutCat">
-          <a href="individualCat.html">
-            <section class="catItem">
-              <div>
-                <h3 id="catName">Oscar</h3>
-                <p>
-                  Meet Oscar! A 3 year old male, who perfers a quiet afternoon.
-                  He's quite and likes sleeping besides other cats! He likes
-                  staying in the cat huts, and squeezes into small areas. Don't
-                  worry! He warms up easily to repeat customers and is easy to
-                  please. <br />
-                  If your lucky, you might see him on your next visit!
-                </p>
-              </div>
-              <div class="catImg">
-                <img src="../images/cats/oscar.jpg" />
-              </div>
-            </section>
-          </a>
-
-          <section class="catItem">
-            <div class="catImg">
-              <img src="../images/cats/dusty.jpg" />
-            </div>
-            <div>
-              <h3>Dusty</h3>
-              <p>
-                Meet Dusty! A funny and adorable young female cat around 1 year
-                old. Dusty likes sitting near people, and oscasially might go on
-                top of the table. Like her name, her tail seems to dust the
-                tables as it swings. Shes friendly with other cats and seems to
-                purr up next to children.
-              </p>
-            </div>
-          </section>
-
-          <section class="catItem">
-            <div>
-              <h3>Milo</h3>
-              <p>
-                Meet the youngest kitten of our roster. Milo, just being a few
-                months old seems to have bursts of energy as well as times of
-                aboslute laziness. Milo is often seen bothering other cats, his
-                favorite being Oscar who only seems to tolerate the kittens
-                behavior. Milo emjoys running around the cafe, and won't
-                hesitate to play with your shoe lace, or pick up running with a
-                toy you might have in your hand.
-              </p>
-            </div>
-            <div class="catImg">
-              <img src="../images/cats/milo.jpg" />
-            </div>
-          </section>
-
-          <section class="catItem">
-            <div class="catImg">
-              <img src="../images/cats/morgana.jpg" />
-            </div>
-            <div>
-              <h3>Morgana</h3>
-              <p>
-                meet Morgana, an older 6 years old female cat. She likes to be a
-                lap kitty and enjoys a good scratch under the chin. She even
-                doesn't mind a small belly rub! Being a semi-senior cat at the
-                estabishment, she won't hesitate to use her baby doll eyes to
-                try and beg for a quick snack.
-              </p>
-            </div>
-          </section>
-
-          <section class="catItem">
-            <div>
-              <h3>Worm</h3>
-              <p>
-                Meet worm. A wigily small 4 year old male, who seems to just
-                love sitting on our bookshelves. He likes staring at customers
-                to walk in as well as people who walk past the cafe. Does he
-                know how to read? We'll never know.
-              </p>
-            </div>
-            <div class="catImg">
-              <img src="../images/cats/worm.jpg" />
-            </div>
-          </section>
-
-          <section class="catItem">
-            <div class="catImg">
-              <img src="../images/cats/soot.jpg" />
-            </div>
-            <div>
-              <h3>Soot</h3>
-              <p>
-                Meet Soot, our charming little ball of fluff! This striking
-                black cat has a luxurious coat of soft fur that’s impossible to
-                resist petting. Soot may be a bit shy at first, but once you’ve
-                earned his trust, you’ll be greeted with endless purrs and
-                cuddles. He loves to lounge around and soak up the sun, but
-                don’t be fooled — when he’s in the mood, Soot can be quite the
-                playful cat, chasing after toys with surprising energy.
-              </p>
-            </div>
-          </section>
-        </div>
+        <div id="aboutCat"></div>
+        <!-- This div will be populated dynamically -->
       </main>
     </div>
+
     <footer>
       <section>
         <h1>About the owner</h1>
       </section>
       <div id="footer">
         <section id="aboutOwner">
-          <img src="../images/ofCafe/owner.png" id="ownerImg" />
+          <img
+            src="../images/ofCafe/owner.png"
+            id="ownerImg"
+            alt="Owner Image"
+          />
           <p>
-            I'm Maria Sue, and I'm the proud owner of pauws for beans. Get it,
+            I'm Maria Sue, and I'm the proud owner of Pauws for Beans. Get it,
             pause/paws for beans (coffee beans). I wanted to create a safe and
             cozy space for people and cats to get along. <br />
-            After having my own childhood cat, sprinkles, I wished people could
-            enjoy a cats company more than anything. I hope you stop by and
-            enjoy this cafe as much as I think sprinkles would have!
+            After having my own childhood cat, Sprinkles, I wished people could
+            enjoy a cat's company more than anything. I hope you stop by and
+            enjoy this cafe as much as I think Sprinkles would have!
           </p>
         </section>
         <section id="information">
           <section id="icons">
-            <img src="../images/icons/facebook.png" class="icon" />
-            <img src="../images/icons/instagram.png" class="icon" />
-            <img src="../images/icons/twitter.png" class="icon" />
+            <img
+              src="../images/icons/facebook.png"
+              class="icon"
+              alt="Facebook"
+            />
+            <img
+              src="../images/icons/instagram.png"
+              class="icon"
+              alt="Instagram"
+            />
+            <img src="../images/icons/twitter.png" class="icon" alt="Twitter" />
           </section>
           <hr />
           <p>Mail:</p>
@@ -170,5 +82,6 @@
     </footer>
 
     <script src="../script.js"></script>
+    <script src="../cat.js"></script>
   </body>
 </html>
