@@ -2,16 +2,27 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
   width: 80%;
-  margin-bottom: 10px;
   box-sizing: border-box;
+  padding: 10px;
+  background-color: antiquewhite;
+  border-right: 10px solid black;
+  border-bottom: 10px solid black;
+  border-top: 2px solid black;
+}
+
+.menuLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
 .paragraph {
   margin-left: 10px;
   margin-right: 10px;
-  flex: 1;
 }
 
 .price {
@@ -31,6 +42,13 @@ hr {
 
 #menuAbout {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
