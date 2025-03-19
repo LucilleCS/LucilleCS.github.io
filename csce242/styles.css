@@ -109,3 +109,15 @@ link {
 .contentBox h3 {
   padding-left: 10px;
 }
+
+.contentBox {
+  text-align: center; /* Centers the text inside the contentBox */
+}
+
+.contentBox a {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
