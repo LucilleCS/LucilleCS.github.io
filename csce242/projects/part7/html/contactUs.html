@@ -1,0 +1,94 @@
+<!--Lucille O'Shea, CSCE242 section 001-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project part 4: update</title>
+    <link rel="stylesheet" href="../styles/homepage.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <img id="logo" src="../images/ofCafe/logo.png" />
+      </div>
+      <nav id="main-nav">
+        <div id="toggle-nav">
+          <div id="click">&#9660;</div>
+          <div id="unclick">&#9650;</div>
+        </div>
+        <div id="nav-items" class="columns hide-small">
+          <div class="row">
+            <ul id="nagivation">
+              <li><a href="homepage.html"> Home </a></li>
+              <li>
+                <a href="reservation.html"> Reservation </a>
+              </li>
+              <li><a href="shop.html"> Shop </a></li>
+              <li><a href="menu.html"> Menu </a></li>
+              <li><a href="cats.html"> Cats </a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="page">
+      <main>
+
+        <!--9a26536a-fe21-4fe8-aa80-106afbbb31d2-->
+        <section id="contactUs">
+            <h1>Contact Us</h1>
+            <form method="POST" id="form">
+
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+            
+                <input type="text" name="name" required>
+                <input type="email" name="email" required>
+                <textarea name="message" required></textarea>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            
+                <button type="submit">Submit Form</button>
+            
+                <div id="result"></div>
+            
+            </form>
+        </section>
+        <section class="one">
+            <h3>Our Location</h3>
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6616.003717138309!2d-81.03153642470606!3d33.99248602088401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8bad78613996b%3A0x4bd0b461be2951fe!2sMidtown%20-%20Downtown%2C%20Columbia%2C%20SC%2029208!5e0!3m2!1sen!2sus!4v1742476660217!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        
+      </main>
+    </div>
+    <footer>
+      <section>
+        <h1>About the owner</h1>
+      </section>
+      <div id="footer">
+        <section id="aboutOwner">
+          <img src="../images/ofCafe/owner.png" id="ownerImg" />
+          <p>
+            I'm Maria Sue, and I'm the proud owner of pauws for beans. Get it,
+            pause/paws for beans (coffee beans). I wanted to create a safe and
+            cozy space for people and cats to get along. <br />
+            After having my own childhood cat, sprinkles, I wished people could
+            enjoy a cats company more than anything. I hope you stop by and
+            enjoy this cafe as much as I think sprinkles would have!
+          </p>
+        </section>
+        <section id="information">
+          <section id="icons">
+            <img src="../images/icons/facebook.png" class="icon" />
+            <img src="../images/icons/instagram.png" class="icon" />
+            <img src="../images/icons/twitter.png" class="icon" />
+          </section>
+          <hr />
+          <p>Mail:</p>
+          <a href="mailto:example@example.com">MariaSue001@gmail.com</a>
+        </section>
+      </div>
+      &copy; Lucille Oshea
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
