@@ -1,0 +1,33 @@
+/* Center the contactUs section */
+#contactUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;      
+    text-align: center;      
+    padding: 20px;
+    background-color: aliceblue;
+  }
+  
+  
+ 
+  button {
+    background-color: palevioletred; 
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+
+.one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;      
+    text-align: center;      
+    padding: 20px;
+}
+  

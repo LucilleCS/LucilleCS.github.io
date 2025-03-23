@@ -3,7 +3,7 @@
 <html>
   <head>
     <title>Project part 4: update</title>
-    <link rel="stylesheet" href="../styles/homepage.css" />
+    <link rel="stylesheet" href="../styles/contactUs.css" />
     <link rel="stylesheet" href="../styles/styles.css" />
   </head>
   <body>
@@ -26,6 +26,7 @@
               <li><a href="shop.html"> Shop </a></li>
               <li><a href="menu.html"> Menu </a></li>
               <li><a href="cats.html"> Cats </a></li>
+              <li><a href="contactUs.html"> Contact Us</a></li>
             </ul>
           </div>
         </div>
@@ -38,15 +39,29 @@
         <section id="contactUs">
             <h1>Contact Us</h1>
             <form method="POST" id="form">
-
-                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-            
+              <section>
+                <input type="hidden" name="access_key" value="9a26536a-fe21-4fe8-aa80-106afbbb31d2">
+              </section>
+              <section>
+                <p>Name: </p>
                 <input type="text" name="name" required>
+              </section>
+
+              <section>
+                <p>Email: </p>
                 <input type="email" name="email" required>
+              </section>
+  
+              <section>
+                <p>Message: </p>
                 <textarea name="message" required></textarea>
-                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+              </section>
+
+              <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
             
-                <button type="submit">Submit Form</button>
+              <button type="submit">Submit Form</button>
+
+            </section>
             
                 <div id="result"></div>
             
