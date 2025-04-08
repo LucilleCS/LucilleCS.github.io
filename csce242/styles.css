@@ -119,5 +119,8 @@ link {
   max-width: 400px;
   display: block;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 10px;
+}
+.contentBox9 a{
+  margin-top:0;
 }
